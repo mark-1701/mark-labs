@@ -3,17 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-
   --border: rgba(255, 255, 255, 0.1);
   --border-strong: rgba(255, 255, 255, 0.2);
-
-  --home-foreground: #ffffffeb;
-  --home-foreground-secondary: #ffffffa1;
-  --home-foregroud-disabled: #ffffff7a;
-
-  /* --text-primary: #e5e5e5;
-  --text-secondary: #a0a0a0;
-  --text-disabled: #6b6b6b; */
 }
 
 @theme inline {
@@ -24,12 +15,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    /* --foreground: #ededed; */
+    /* --background: #0a0a0a;
+    --foreground: #ededed; */
   }
 }
 
 .dark {
+  /* --background: #0a0a0a;*/
   --background: #1d1f20;
   --foreground: #ededed;
 }
