@@ -4,16 +4,14 @@ type HeadingSeparatorProps = {
   children: React.ReactNode;
 };
 
-const HeadingSeparator = ({ children }: HeadingSeparatorProps) => {
+export const HeadingSeparator = ({ children }: HeadingSeparatorProps) => {
   return (
-    <div className="my-12 flex items-center">
+    <div className="flex items-center">
       {/* <hr className="flex-1 border-(--border)" /> */}
-      <p className="font-serif font-medium text-(--home-foreground) mr-1">
+      <p className="mr-1 font-serif font-bold text-(--home-foreground)">
         {children}
       </p>
       <hr className="flex-1 border-(--border)" />
     </div>
   );
 };
-
-export default HeadingSeparator;

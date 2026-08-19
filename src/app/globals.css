@@ -8,7 +8,7 @@
   --border-strong: rgba(255, 255, 255, 0.2);
 
   --home-foreground: #ffffffeb;
-  --home-foreground-secondary: #ffffffa1;
+  --home-foreground-secondary: rgba(255, 255, 255, 0.60);
   --home-foregroud-disabled: #ffffff7a;
 
   /* --text-primary: #e5e5e5;
@@ -24,13 +24,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* --background: #0a0a0a; */
     /* --foreground: #ededed; */
   }
 }
 
 .dark {
-  --background: #1d1f20;
+  /* --background: hsl(200, 5%, 12%); */
+  --background: hsl(200, 5%, 5%);
   --foreground: #ededed;
 }
 

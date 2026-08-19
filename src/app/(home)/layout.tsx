@@ -7,8 +7,8 @@ export default function HomeLayout({
 }) {
   return (
     <div
-      className="m-2 text-(--home-foreground-secondary) sm:mx-auto sm:mt-20
-        sm:mb-40 sm:w-140"
+      className="m-4 text-(--home-foreground-secondary) sm:mx-auto sm:mt-20
+        sm:mb-40 sm:w-138"
     >
       <TopMenu />
       {children}

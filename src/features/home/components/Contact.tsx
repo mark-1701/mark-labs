@@ -1,12 +1,12 @@
-import { Heading, Stack } from '@/components';
-import Paragraph from '@/components/ui/Paragraph';
+import { Paragraph, Stack } from '@/components';
 
 export const Contact = () => {
   return (
     <Stack>
       <Paragraph>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugiat
-        nobis ab ad minus rem omnis? Tenetur impedit est nobis.
+        Estoy abierto a nuevos proyectos y oportunidades. Si tienes una
+        propuesta o quieres hablar sobre una idea, puedes escribirme a través de
+        este formulario.
       </Paragraph>
 
       <div className="flex flex-col gap-8">

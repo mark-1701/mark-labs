@@ -2,5 +2,5 @@ export { AboutMe } from './AboutMe';
 export { Contact } from './Contact';
 export { LongDescription } from './LongDescription';
 export { Projects } from './Projects';
-export { Skills } from './Skills';
+export { Technologies } from './Technologies';
 export { SocialLinksCarousel } from './SocialLinksCarousel';

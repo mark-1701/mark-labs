@@ -11,5 +11,5 @@ function cn(...inputs: any[]) {
 }
 
 export const Stack = ({ className, children }: StackProps) => {
-  return <div className={cn('my-12', className)}>{children}</div>;
+  return <div className={cn('my-8', className)}>{children}</div>;
 };

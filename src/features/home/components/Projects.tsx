@@ -1,36 +1,39 @@
 import { Caption, Heading, Stack } from '@/components';
 import Image from 'next/image';
-import Paragraph from '@/components/ui/Paragraph';
 
 const projects = [
   {
     imageURL: '/proyecto.jpg',
-    title: 'Quiosco café incasa',
+    title: 'Uptask - Plataforma de gestión de proyectos',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Abrepellendus voluptatibus consectetur quae numquam nemo, distinctio veniam magni quia.'
+      'Desarrollo de una aplicación web para la gestión y seguimiento de proyectos y tareas colaborativas, con funcionalidades de autenticación, gestión de equipos y control de actividades.'
   },
   {
     imageURL: '/proyecto.jpg',
-    title: 'Quiosco café incasa',
+    title: 'Mi Kiosquito - Sistema de pedidos para cafetería',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Abrepellendus voluptatibus consectetur quae numquam nemo, distinctio veniam magni quia.'
+      'Desarrollo de una aplicación web para la gestión de pedidos en cafetería, que permite la toma de órdenes desde terminales digitales y la administración del proceso de preparación y entrega. '
   },
   {
     imageURL: '/proyecto.jpg',
-    title: 'Quiosco café incasa',
+    title: 'Tesloshop - Plataforma de comercio electrónico',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Abrepellendus voluptatibus consectetur quae numquam nemo, distinctio veniam magni quiaLorem ipsum dolor sit amet consectetur, adipisicing elit. Abrepellendus voluptatibus consectetur quae numquam nemo, distinctio veniam magni quia.'
+      'Desarrollo de una aplicación web de comercio electrónico con catálogo de productos, carrito de compras y panel administrativo, orientada a la gestión de ventas y la administración de inventario.'
   }
 ];
 
 export const Projects = () => {
   return (
     <Stack>
-      <div className="space-y-9 sm:space-y-12">
+      <div className="space-y-10">
         {projects.map(({ imageURL, title, description }, index) => (
           <div key={index} className="flex items-center justify-between gap-3">
             <div>
-              <Heading as="h6" className="mt-0 font-normal">
+              <Heading
+                as="h6"
+                className="text-sm font-normal italic opacity-85 sm:text-sm
+                  sm:font-normal"
+              >
                 {title}
               </Heading>
 
@@ -42,7 +45,7 @@ export const Projects = () => {
             </div>
 
             <Image
-              src={'/proyecto.jpg'}
+              src={'/not-found.jpg'}
               alt={'loli-bahia'}
               width={120}
               height={80}
