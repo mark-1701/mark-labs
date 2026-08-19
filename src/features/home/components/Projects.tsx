@@ -25,7 +25,7 @@ const projects = [
 export const Projects = () => {
   return (
     <Stack>
-      <div className="space-y-12">
+      <div className="space-y-8 sm:space-y-12">
         {projects.map(({ imageURL, title, description }, index) => (
           <div key={index} className="flex items-center justify-between gap-3">
             <div>
@@ -37,7 +37,7 @@ export const Projects = () => {
                 {title}
               </Heading>
 
-              <Caption className='mb-1'>{description}</Caption>
+              <Caption className="mb-1">{description}</Caption>
 
               <a href="" className="text-sm underline opacity-85">
                 ver más...
