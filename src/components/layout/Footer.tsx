@@ -6,7 +6,7 @@ export const Footer = () => {
       <Separator />
       <Stack className="my-8">
         <p className="text-center">
-          © 2026 | Diseñado y desarrolador por marco, aka (vini)
+          © 2026 | Diseñado y desarrollado por marco, aka (vini)
         </p>
       </Stack>
     </div>
