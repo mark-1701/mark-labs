@@ -1,5 +1,5 @@
 {
-  "name": "mark-labs",
+  "name": "app-temporal-01",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,12 +10,11 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "devicon": "^2.17.0",
-    "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "tailwind-merge": "^3.5.0",
-    "zod": "^4.3.6"
+    "next": "16.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -24,11 +23,11 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.1.6",
-    "prettier": "^3.8.1",
-    "prettier-plugin-classnames": "^0.9.0",
-    "prettier-plugin-merge": "^0.9.1",
-    "prettier-plugin-tailwindcss": "^0.7.2",
+    "eslint-config-next": "16.3.1",
+    "prettier": "^3.9.6",
+    "prettier-plugin-classnames": "^0.10.4",
+    "prettier-plugin-merge": "^0.10.1",
+    "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

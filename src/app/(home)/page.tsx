@@ -5,7 +5,7 @@ import {
   Projects,
   Technologies
 } from '@/features/home';
-import 'devicon/devicon.min.css';
+// import 'devicon/devicon.min.css';
 import { HeadingSeparator as HSeparator } from '@/components/ui';
 
 const HomePage = () => {

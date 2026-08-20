@@ -1,4 +1,4 @@
-import { Heading, Stack } from '@/components';
+import { Stack } from '@/components';
 import clsx from 'clsx';
 
 const skills: { title: string; icon: string }[] = [

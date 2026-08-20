@@ -14,6 +14,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        {/* todo: esto es temporal, tengo, antes que arreglen el paquete npm */}
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+      </head>
       <body
         className={`${fontSerif.variable} ${fontSans.variable}
           ${fontMono.variable} font-sans antialiased`}
