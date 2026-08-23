@@ -19,13 +19,19 @@ const projects = [
     title: 'Tesloshop - Plataforma de comercio electrónico',
     description:
       'Desarrollo de una aplicación web de comercio electrónico con catálogo de productos, carrito de compras y panel administrativo, orientada a la gestión de ventas y la administración de inventario.'
+  },
+  {
+    imageURL: '/proyecto.jpg',
+    title: 'Tesloshop - Plataforma de comercio electrónico',
+    description:
+      'Desarrollo de una aplicación web de comercio electrónico con catálogo de productos, carrito de compras y panel administrativo, orientada a la gestión de ventas y la administración de inventario.'
   }
 ];
 
 export const Projects = () => {
   return (
     <Stack>
-      <div className="space-y-8 sm:space-y-12">
+      <div className="my-8 space-y-8 sm:space-y-12">
         {projects.map(({ imageURL, title, description }, index) => (
           <div key={index} className="flex items-center justify-between gap-3">
             <div>
