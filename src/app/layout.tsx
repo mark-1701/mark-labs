@@ -1,3 +1,4 @@
+import { ToastProvider } from '@/providers/ToastProvider';
 import type { Metadata } from 'next';
 import { fontMono, fontSans, fontSerif } from '@/config/fonts';
 import './globals.css';
@@ -13,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         {/* todo: esto es temporal, tengo, antes que arreglen el paquete npm */}
         <link
@@ -27,6 +28,8 @@ export default function RootLayout({
           ${fontMono.variable} font-sans antialiased`}
       >
         {children}
+
+        <ToastProvider />
       </body>
     </html>
   );

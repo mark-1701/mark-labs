@@ -3,17 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-
   --border: rgba(255, 255, 255, 0.1);
   --border-strong: rgba(255, 255, 255, 0.2);
-
-  --home-foreground: #ffffffeb;
-  --home-foreground-secondary: rgba(255, 255, 255, 0.60);
-  --home-foregroud-disabled: #ffffff7a;
-
-  /* --text-primary: #e5e5e5;
-  --text-secondary: #a0a0a0;
-  --text-disabled: #6b6b6b; */
 }
 
 @theme inline {
@@ -22,20 +13,32 @@
   --font-mono: var(--font-IBM-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --background: #0a0a0a; */
-    /* --foreground: #ededed; */
-  }
-}
-
 .dark {
-  /* --background: hsl(200, 5%, 12%); */
   --background: hsl(200, 5%, 5%);
   --foreground: #ededed;
+}
+
+.home {
+  --background: hsl(200, 5%, 5%);
+  --foreground: #ffffffeb;
+  --foreground-secondary: rgba(255, 255, 255, 0.7);
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
 }
+
+/* ! otros estilos (posible eliminar) */
+/* --background: hsl(200, 5%, 12%); */
+/* --text-primary: #e5e5e5;
+--text-secondary: #a0a0a0;
+--text-disabled: #6b6b6b; */
+/* --foregroud-disabled: #ffffff7a; */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a; */
+/* --foreground: #ededed;
+  }
+} */

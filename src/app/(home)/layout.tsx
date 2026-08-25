@@ -7,12 +7,13 @@ export default function HomeLayout({
 }) {
   return (
     <div
-      className="m-4 text-(--home-foreground-secondary) sm:mx-auto sm:mt-20
-        sm:mb-40 sm:w-138"
+      className="home flow-root bg-(--background) text-(--foreground-secondary)"
     >
-      <TopMenu />
-      {children}
-      <Footer />
+      <div className="m-4 sm:mx-auto sm:mt-20 sm:mb-40 sm:w-138">
+        <TopMenu />
+        {children}
+        <Footer />
+      </div>
     </div>
   );
 }

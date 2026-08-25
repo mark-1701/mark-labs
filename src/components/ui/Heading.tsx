@@ -16,7 +16,7 @@ export const Heading = ({
   return (
     <Tag
       className={cn(
-        'font-serif text-(--home-foreground) first:mt-0',
+        'font-serif first:mt-0',
         {
           'mt-0 mb-6 text-3xl font-bold sm:mb-8 sm:text-4xl': Tag === 'h1',
           'mt-8 mb-4 text-2xl font-bold sm:mt-12 sm:mb-6 sm:text-3xl':
