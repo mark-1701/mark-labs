@@ -4,3 +4,4 @@ export { Stack } from './Stack';
 export { Caption } from './Caption';
 export { HeadingSeparator } from './HeadingSeparator';
 export { Paragraph } from './Paragraph';
+export { Dialog } from './Dialog';

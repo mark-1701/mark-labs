@@ -1,7 +1,8 @@
 @import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
 :root {
-  --background: #ffffff;
+  --background: #f9fafb;
   --foreground: #171717;
   --border: rgba(255, 255, 255, 0.1);
   --border-strong: rgba(255, 255, 255, 0.2);
@@ -27,6 +28,33 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
+}
+
+.tiptap {
+  @apply prose prose-img:max-h-[400px] max-w-none p-3 focus:outline-none;
+}
+
+.loader {
+  --color-1: #262626;
+  --size: 0.6px;
+
+  width: calc(48 * var(--size));
+  height: calc(48 * var(--size));
+  border: calc(5 * var(--size)) dotted var(--color-1);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ! otros estilos (posible eliminar) */

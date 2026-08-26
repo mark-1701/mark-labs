@@ -1,0 +1,32 @@
+import type { Editor } from '@tiptap/core';
+import ToolBarGroup from './components/ToolbarGroup';
+import Headings from './tools/Headings';
+import InsertImage from './tools/InsertImage';
+import Links from './tools/Links';
+import Lists from './tools/Lists';
+import Marks from './tools/Marks';
+import TextAlign from './tools/TextAlign';
+import UndoRedo from './tools/UndoRedo';
+import { useToolbarState } from './useToolbarState';
+
+const tools = [UndoRedo, Marks, Headings, Lists, TextAlign, Links, InsertImage];
+
+type ToolbarProps = {
+  editor: Editor;
+};
+
+export const ToolBar = ({ editor }: ToolbarProps) => {
+  const editorState = useToolbarState(editor);
+
+  return (
+    <div className="flex overflow-hidden border-b-2 border-b-gray-300 p-1">
+      <div className="flex divide-x divide-gray-200">
+        {tools.map(Tool => (
+          <ToolBarGroup key={Tool.name}>
+            <Tool editor={editor} toolbarState={editorState} iconSize={18} />
+          </ToolBarGroup>
+        ))}
+      </div>
+    </div>
+  );
+};

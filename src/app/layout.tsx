@@ -28,7 +28,6 @@ export default function RootLayout({
           ${fontMono.variable} font-sans antialiased`}
       >
         {children}
-
         <ToastProvider />
       </body>
     </html>

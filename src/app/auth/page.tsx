@@ -42,7 +42,7 @@ const AuthPage = () => {
   };
 
   return (
-    <div className="flex h-dvh w-dvw items-center justify-center bg-gray-100">
+    <div className="flex h-dvh w-dvw items-center justify-center">
       <div className="w-80 rounded border border-gray-300 bg-white p-4 px-8">
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <p className="mx-auto font-medium">Autenticación</p>
