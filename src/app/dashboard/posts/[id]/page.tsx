@@ -12,7 +12,7 @@ const PostIdPage = async ({ params }: PostIdPage) => {
 
   const resp = await getPostById(id);
 
-  if (!resp.ok) return <p>No existe</p>;
+  if (!resp.ok) return <p>No existe ese artículo</p>;
 
   return <PostContent content={resp.data.content} />;
 };

@@ -1,5 +1,5 @@
 const DashboardPage = () => {
-  return <div>Página de inicio Dashboard</div>;
+  return <div>¡Bienvenido al panel administrativo de blogs!</div>;
 };
 
 export default DashboardPage;

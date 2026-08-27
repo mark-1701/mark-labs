@@ -1,3 +1,5 @@
+'use client';
+
 import { PostSummary, TextEditor } from '../components';
 import { PostEditorContext } from '../context/PostEditorContext';
 import { useCreatePostEditor } from '../hooks/useCreatePostEditor';

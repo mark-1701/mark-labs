@@ -19,9 +19,7 @@ export const PostCard = ({ id, title }: PostCardProps) => {
   const deleteDraftPost = usePostStore(state => state.deleteDraftPost);
 
   const handleRedirection = (postId: string) => {
-    const params = new URLSearchParams({ postId });
-    router.push(`/dashboard/posts/edit?${params.toString()}`);
-    router.push(`/dashboard/posts/edit?${params.toString()}`);
+    router.push(`/dashboard/posts/${postId}/edit`);
   };
 
   const handleDelete = async (id: string) => {

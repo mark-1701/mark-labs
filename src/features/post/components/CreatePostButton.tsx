@@ -90,8 +90,7 @@ export const CreatePostButton = () => {
   };
 
   const openPost = (postId: string) => {
-    const params = new URLSearchParams({ postId });
-    router.push(`/dashboard/posts/edit?${params.toString()}`);
+    router.push(`/dashboard/posts/${postId}/edit`);
   };
 
   const footerContent = (
