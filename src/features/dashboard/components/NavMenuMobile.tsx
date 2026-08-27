@@ -31,10 +31,10 @@ export const NavMenuMobile = () => {
             className="cursor-pointer text-left"
             onClick={() => {
               setIsOpen(false);
-              router.push('/posts');
+              router.push('/dashboard');
             }}
           >
-            Blog
+            Inicio
           </button>
           <button
             className="cursor-pointer text-left"

@@ -39,6 +39,7 @@ export const CreatePostButton = () => {
     }
 
     await createNewPost();
+
     setIsCheakingDraftPost(false);
   };
 
@@ -90,7 +91,7 @@ export const CreatePostButton = () => {
 
   const openPost = (postId: string) => {
     const params = new URLSearchParams({ postId });
-    router.push(`/dashboard/post-management/edit?${params.toString()}`);
+    router.push(`/dashboard/posts/edit?${params.toString()}`);
   };
 
   const footerContent = (

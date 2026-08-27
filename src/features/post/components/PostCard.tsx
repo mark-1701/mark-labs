@@ -2,9 +2,10 @@
 
 import { deletePost } from '@/actions';
 import { usePostStore } from '@/stores/post-store';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import { GoTrash } from 'react-icons/go';
+import { GoPencil, GoTrash } from 'react-icons/go';
 import { toast } from 'react-toastify';
 
 type PostCardProps = {
@@ -19,8 +20,8 @@ export const PostCard = ({ id, title }: PostCardProps) => {
 
   const handleRedirection = (postId: string) => {
     const params = new URLSearchParams({ postId });
-    router.push(`/dashboard/post-management/edit?${params.toString()}`);
-    router.push(`/dashboard/post-management/edit?${params.toString()}`);
+    router.push(`/dashboard/posts/edit?${params.toString()}`);
+    router.push(`/dashboard/posts/edit?${params.toString()}`);
   };
 
   const handleDelete = async (id: string) => {
@@ -40,20 +41,29 @@ export const PostCard = ({ id, title }: PostCardProps) => {
 
   return (
     <li key={id} className="group flex justify-between p-1">
-      <p
-        className="text-blue-500 hover:cursor-pointer"
-        onClick={() => handleRedirection(id)}
+      <Link
+        href={`/dashboard/posts/${id}`}
+        className="text-blue-500 hover:cursor-pointer hover:underline"
       >
         {title ?? 'Sin título'}
-      </p>
-      <button
-        className="invisible text-red-500 group-hover:visible
-          hover:cursor-pointer disabled:opacity-50"
-        disabled={isDeleting}
-        onClick={() => handleDelete(id)}
-      >
-        <GoTrash size={18} className="" />
-      </button>
+      </Link>
+
+      <div className="invisible flex gap-2 group-hover:visible">
+        <button
+          className="hover:cursor-pointer"
+          onClick={() => handleRedirection(id)}
+        >
+          <GoPencil size={18} className="text-blue-500" />
+        </button>
+
+        <button
+          className="hover:cursor-pointer disabled:opacity-50"
+          disabled={isDeleting}
+          onClick={() => handleDelete(id)}
+        >
+          <GoTrash size={18} className="text-red-500" />
+        </button>
+      </div>
     </li>
   );
 };

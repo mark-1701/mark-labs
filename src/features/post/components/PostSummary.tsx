@@ -62,7 +62,7 @@ export const PostSummary = ({ editor, postId }: PostSummaryProps) => {
 
     deleteDraftPost(postId);
     toast.success('Artículo guardado con éxito');
-    router.push('/dashboard/post-management');
+    router.push('/dashboard/posts');
   };
 
   return (
