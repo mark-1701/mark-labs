@@ -1,35 +1,29 @@
-import { SocialLinksCarousel } from '@/features/home';
-import clsx from 'clsx';
+'use client';
 
-const menuOptions = [
-  {
-    title: 'Home',
-    selected: true
-  },
-  {
-    title: 'Blog',
-    selected: false
-  }
-];
+import { SocialLinksCarousel } from '@/features/home';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export const TopMenu = () => {
+  const pathname = usePathname();
+
+  const getLinkClass = (path: string) => (pathname === path ? 'underline' : '');
+
   return (
-    <nav className="mb-14 flex items-center justify-between">
+    <nav className="flex items-center justify-between">
       <SocialLinksCarousel />
 
       <ul className="flex justify-end gap-3">
-        {menuOptions.map(({ title, selected }) => (
-          // <a href="" className="underline hover:underline">
-          <a
-            key={title}
-            href=""
-            className={clsx('hover:underline', {
-              underline: selected
-            })}
-          >
-            {title}
-          </a>
-        ))}
+        <li>
+          <Link href="/" className={getLinkClass('/')}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog" className={getLinkClass('/blog')}>
+            Blog
+          </Link>
+        </li>
       </ul>
     </nav>
   );

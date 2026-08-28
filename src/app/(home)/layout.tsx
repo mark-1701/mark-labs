@@ -9,9 +9,14 @@ export default function HomeLayout({
     <div
       className="home flow-root bg-(--background) text-(--foreground-secondary)"
     >
-      <div className="m-4 sm:mx-auto sm:mt-20 sm:mb-40 sm:w-138">
-        <TopMenu />
-        {children}
+      <div className="m-4 min-h-dvh sm:m-0 sm:mx-auto sm:w-138">
+        <div
+          className="flex min-h-dvh flex-col sm:mt-20
+            sm:min-h-[calc(100dvh-5rem)]"
+        >
+          <TopMenu />
+          {children}
+        </div>
         <Footer />
       </div>
     </div>

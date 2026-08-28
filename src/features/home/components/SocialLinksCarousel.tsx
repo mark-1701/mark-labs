@@ -14,7 +14,7 @@ export const SocialLinksCarousel = () => {
         <div key={title} className="h-6 w-6">
           <i
             className={clsx(
-              'text-base text-(--foreground)',
+              'text-base text-(--foreground-secondary)',
               `devicon-${icon}-plain`
             )}
           ></i>

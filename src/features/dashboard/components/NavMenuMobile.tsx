@@ -43,7 +43,7 @@ export const NavMenuMobile = () => {
               router.push('/dashboard/posts');
             }}
           >
-            Gestionar posts
+            Gestionar artículos
           </button>
         </div>
       </aside>
