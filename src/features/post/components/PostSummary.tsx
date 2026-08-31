@@ -85,7 +85,7 @@ export const PostSummary = ({ editor, postId }: PostSummaryProps) => {
               value={draftPost?.draft.title ?? ''}
               disabled={true}
               className="mb-1 w-full rounded border border-gray-300 p-1
-                opacity-55"
+                opacity-50"
               {...register('title', { required: true })}
             />
             {errors.title && (

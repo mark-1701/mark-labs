@@ -7,7 +7,10 @@ import { usePathname } from 'next/navigation';
 export const TopMenu = () => {
   const pathname = usePathname();
 
-  const getLinkClass = (path: string) => (pathname === path ? 'underline' : '');
+  const getLinkClass = (path: string) => {
+    if (path === '/') return pathname === '/' ? 'underline' : '';
+    return pathname.startsWith(path) ? 'underline' : '';
+  };
 
   return (
     <nav className="flex items-center justify-between">

@@ -23,6 +23,10 @@
   --background: hsl(200, 5%, 5%);
   --foreground: #ffffffeb;
   --foreground-secondary: rgba(255, 255, 255, 0.7);
+  --foreground-600: rgba(255, 255, 255, 0.6);
+  --foreground-500: rgba(255, 255, 255, 0.5);
+  --foreground-400: rgba(255, 255, 255, 0.4);
+  /* comentario */
 }
 
 body {
@@ -30,9 +34,27 @@ body {
   color: var(--foreground);
 }
 
+/* Clases personalizadas */
+
 .tiptap {
   @apply prose prose-img:max-h-[400px] max-w-none p-3 focus:outline-none;
 }
+
+@utility choco-article {
+  & h1 {
+    @apply mb-6 font-serif text-xl font-bold sm:mb-8;
+  }
+
+  & p {
+    @apply mb-4 leading-6 sm:mb-5;
+  }
+
+  & img {
+    @apply mb-4 max-h-[300px] sm:mb-5;
+  }
+}
+
+/* Animaciones */
 
 .loader {
   --color-1: #262626;

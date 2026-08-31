@@ -37,15 +37,15 @@ export const Projects = () => {
             <div>
               <Heading
                 as="h6"
-                className="text-sm font-normal italic opacity-85 sm:text-sm
-                  sm:font-normal"
+                className="text-sm font-normal text-(--foreground-600) italic
+                  sm:text-sm sm:font-normal"
               >
                 {title}
               </Heading>
 
               <Caption className="mb-1">{description}</Caption>
 
-              <a href="" className="text-sm underline opacity-85">
+              <a href="" className="text-sm text-(--foreground-600) underline">
                 ver más...
               </a>
             </div>

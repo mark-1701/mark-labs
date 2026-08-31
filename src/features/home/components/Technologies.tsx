@@ -34,7 +34,7 @@ const Technology = ({ title, icon }: { title: string; icon?: string }) => {
     <figure className="flex flex-col items-center gap-3">
       <i
         className={clsx(
-          'text-[24px] text-(--foreground) opacity-65 sm:text-[36px]',
+          'text-[24px] text-(--foreground-600) sm:text-[36px]',
           `devicon-${icon}-plain`
         )}
       ></i>

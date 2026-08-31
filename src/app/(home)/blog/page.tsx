@@ -24,7 +24,9 @@ const BlogPage = async () => {
               >
                 {post.title ?? 'Sin título'}
               </Link>
-              <p className="opacity-45">{formatDateShort(post.createdAt)}</p>
+              <p className="text-(--foreground-400)">
+                {formatDateShort(post.createdAt)}
+              </p>
             </div>
           </li>
         ))}
