@@ -1,7 +1,6 @@
 import { getPostById } from '@/actions';
 import { Stack } from '@/components';
-import { BlogPostContent } from '@/features/blog/components/BlogPostContent';
-import { SocialLinksCarousel } from '@/features/home';
+import { BlogPostContent, SocialShareLinks } from '@/features/blog';
 import Link from 'next/link';
 import { GoArrowLeft } from 'react-icons/go';
 
@@ -32,15 +31,14 @@ const BlogPageId = async ({ params }: BlogIdPage) => {
       </div>
 
       <div
-        className="mt-8 mb-20 border-t border-b border-dashed
+        className="mt-12 mb-19 border-t border-b border-dashed
           border-(--border-strong)"
       >
         <Stack>
-          <p className="mb-5 text-(--foreground-600) italic">
+          <p className="mb-6 text-(--foreground-600) italic">
             Comparte este artículo en:
           </p>
-
-          <SocialLinksCarousel />
+          <SocialShareLinks />
         </Stack>
       </div>
     </>

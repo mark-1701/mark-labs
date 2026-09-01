@@ -3,4 +3,4 @@ export { Contact } from './Contact';
 export { LongDescription } from './LongDescription';
 export { Projects } from './Projects';
 export { Technologies } from './Technologies';
-export { SocialLinksCarousel } from './SocialLinksCarousel';
+export { SocialLinks } from './SocialLinks';

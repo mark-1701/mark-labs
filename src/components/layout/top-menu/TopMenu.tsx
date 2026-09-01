@@ -1,6 +1,6 @@
 'use client';
 
-import { SocialLinksCarousel } from '@/features/home';
+import { SocialLinks } from '@/features/home';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -14,8 +14,7 @@ export const TopMenu = () => {
 
   return (
     <nav className="flex items-center justify-between">
-      <SocialLinksCarousel />
-
+      <SocialLinks />
       <ul className="flex justify-end gap-3">
         <li>
           <Link href="/" className={getLinkClass('/')}>
