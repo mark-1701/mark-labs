@@ -1,9 +1,7 @@
-import { Stack } from '@/components';
-
 export default function BlogLayout({
   children
 }: {
   children: React.ReactNode;
 }) {
-  return <Stack className="my-12">{children}</Stack>;
+  return <div className="mt-12 flex flex-1 flex-col">{children}</div>;
 }

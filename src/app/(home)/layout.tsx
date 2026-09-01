@@ -15,7 +15,8 @@ export default function HomeLayout({
             sm:min-h-[calc(100dvh-5rem)]"
         >
           <TopMenu />
-          {children}
+
+          <div className="flex flex-1 flex-col">{children}</div>
         </div>
         <Footer />
       </div>
