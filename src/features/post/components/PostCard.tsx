@@ -46,12 +46,12 @@ export const PostCard = ({ id, title }: PostCardProps) => {
         {title ?? 'Sin título'}
       </Link>
 
-      <div className="invisible flex gap-2 group-hover:visible">
+      <div className="invisible flex gap-3 group-hover:visible">
         <button
           className="hover:cursor-pointer"
           onClick={() => handleRedirection(id)}
         >
-          <GoPencil size={18} className="text-blue-500" />
+          <GoPencil size={18} className="text-yellow-600" />
         </button>
 
         <button

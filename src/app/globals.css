@@ -4,8 +4,6 @@
 :root {
   --background: #f9fafb;
   --foreground: #171717;
-  --border: rgba(255, 255, 255, 0.1);
-  --border-strong: rgba(255, 255, 255, 0.2);
 }
 
 @theme inline {
@@ -21,12 +19,15 @@
 
 .home {
   --background: hsl(200, 5%, 5%);
+  
   --foreground: #ffffffeb;
   --foreground-secondary: rgba(255, 255, 255, 0.7);
   --foreground-600: rgba(255, 255, 255, 0.6);
   --foreground-500: rgba(255, 255, 255, 0.5);
   --foreground-400: rgba(255, 255, 255, 0.4);
-  /* comentario */
+  
+  --border: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -37,7 +38,8 @@ body {
 /* Clases personalizadas */
 
 .tiptap {
-  @apply prose prose-img:max-h-[400px] max-w-none p-3 focus:outline-none prose-h2:mt-0 ;
+  @apply prose prose-img:max-h-[400px] prose-h2:mt-0 max-w-none p-3
+    focus:outline-none;
 }
 
 @utility choco-article {
