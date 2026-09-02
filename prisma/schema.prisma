@@ -31,6 +31,7 @@ model Post {
   status      PostStatus @default(DRAFT)
   title       String?
   slug        String?    @unique
+  excerpt     String?
   content     Json?
   publishedAt DateTime?
 

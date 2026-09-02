@@ -39,9 +39,8 @@ export const PostSummary = ({ editor, postId }: PostSummaryProps) => {
 
   // ? cargar estado inicial al formulario
   useEffect(() => {
-    if (!draftPost) return;
     reset({
-      title: draftPost.draft.title ?? ''
+      title: draftPost?.draft.title ?? ''
     });
   }, [reset, draftPost]);
 
@@ -72,9 +71,7 @@ export const PostSummary = ({ editor, postId }: PostSummaryProps) => {
           p-4 pb-8"
         onSubmit={handleSubmit(onSubmit)}
       >
-        {/* <h2 className="mb-2 text-center text-lg font-semibold">
-          Crear un post
-        </h2> */}
+        {/* <h2 className="mb-8 text-lg font-semibold">Resumen</h2> */}
 
         <div>
           <div className="mb-4">

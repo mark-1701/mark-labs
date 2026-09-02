@@ -7,12 +7,12 @@ import ToolBarButton from '../components/ToolbarButton';
 
 type ToolbarStateKeys = keyof ToolbarState;
 
-const headingLevels: Level[] = [1, 2, 3, 4, 5, 6];
+const headingLevels: Level[] = [2, 3, 4, 5, 6];
 
 const Headings = ({ editor, toolbarState, iconSize }: ToolProps) => {
   return (
     <div className="group relative flex">
-      <div className="flex rounded p-1 hover:bg-gray-200">
+      <div className="flex rounded p-1 hover:bg-gray-200 items-end">
         <PiTextH size={iconSize} className="text-gray-700" />
         <IoChevronDownOutline size={10} className="text-gray-700" />
       </div>

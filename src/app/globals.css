@@ -37,7 +37,7 @@ body {
 /* Clases personalizadas */
 
 .tiptap {
-  @apply prose prose-img:max-h-[400px] max-w-none p-3 focus:outline-none;
+  @apply prose prose-img:max-h-[400px] max-w-none p-3 focus:outline-none prose-h2:mt-0 ;
 }
 
 @utility choco-article {

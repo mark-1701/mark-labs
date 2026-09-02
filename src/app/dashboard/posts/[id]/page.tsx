@@ -14,7 +14,7 @@ const PostIdPage = async ({ params }: PostIdPage) => {
 
   if (!resp.ok) return <p>No existe ese artículo</p>;
 
-  return <PostContent content={resp.data.content} />;
+  return <PostContent post={resp.data} />;
 };
 
 export default PostIdPage;

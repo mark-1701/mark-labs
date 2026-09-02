@@ -24,7 +24,7 @@ export const useCreatePostEditor = (postId: string) => {
   // ? Carga inicial del contenido
   useLoadDraftPost(editor, postId);
 
-  // ? Sincronización de cambios con Zustand
+  // ? Sincronización de cambios del content con Zustand
   useSyncEditorToDraft(editor, postId);
 
   return {

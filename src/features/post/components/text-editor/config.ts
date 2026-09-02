@@ -1,18 +1,20 @@
 import type { Extensions } from '@tiptap/core';
 import FileHandler from '@tiptap/extension-file-handler';
+import Heading from '@tiptap/extension-heading';
 import Highlight from '@tiptap/extension-highlight';
 import Image from '@tiptap/extension-image';
 import TextAlign from '@tiptap/extension-text-align';
 import StarterKit from '@tiptap/starter-kit';
 import { InsertImage } from './types';
 
-// todo: resivar si insertImage requiere de un await
+// ! resivar si insertImage requiere de un await
 
-export const getExtensions = (
-  insertImage: InsertImage,
-): Extensions => {
+export const getExtensions = (insertImage: InsertImage): Extensions => {
   return [
     StarterKit,
+    Heading.configure({
+      levels: [2, 3, 4, 5, 6]
+    }),
     TextAlign.configure({
       types: ['heading', 'paragraph'],
       defaultAlignment: 'left'
@@ -27,6 +29,7 @@ export const getExtensions = (
         'image/gif',
         'image/webp'
       ],
+      // ? Ejecutar los mecanismos para guardar una imagen
       onDrop: (currentEditor, files, pos) => {
         files.forEach(file => {
           insertImage(currentEditor, file, pos);
@@ -47,11 +50,10 @@ const CustomImage = Image.extend({
       ...this.parent?.(),
       ['data-r2-key']: {
         default: null,
-        parseHTML: element =>
-          element.getAttribute('data-r2-key'),
+        parseHTML: element => element.getAttribute('data-r2-key'),
         renderHTML: attributes => {
-          return { 
-            'data-r2-key': attributes['data-r2-key'] 
+          return {
+            'data-r2-key': attributes['data-r2-key']
           };
         }
       }
