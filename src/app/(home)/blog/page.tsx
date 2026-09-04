@@ -17,14 +17,14 @@ const BlogPage = async () => {
       <ul className="divide-y-1 divide-(--border)">
         {resp.data.map(post => (
           <li key={post.id} className="p-2">
-            <div className="flex justify-between">
+            <div className="flex justify-between gap-4">
               <Link
                 href={`/blog/${post.id}`}
-                className="hover:cursor-pointer hover:text-(--foreground)"
+                className="hover:cursor-pointer hover:text-(--foreground) truncate"
               >
                 {post.title ?? 'Sin título'}
               </Link>
-              <p className="text-(--foreground-400)">
+              <p className="text-(--foreground-400) shrink-0">
                 {formatDateShort(post.createdAt)}
               </p>
             </div>

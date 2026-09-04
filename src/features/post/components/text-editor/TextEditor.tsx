@@ -6,7 +6,7 @@ type TextEditorProps = {
   editor: Editor;
 };
 
-// todo: el botón deshacer están encendido en el arranque
+// todo: el botón deshacer esta encendido en el arranque
 
 export const TextEditor = ({ editor }: TextEditorProps) => {
   return (

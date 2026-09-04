@@ -1,0 +1,30 @@
+[
+  {
+    "imageURL": "/uptask.png",
+    "title": "Uptask - Plataforma de gestión de proyectos",
+    "description": "Desarrollo de una aplicación web para la gestión y seguimiento de proyectos y tareas colaborativas, con funcionalidades de autenticación, gestión de equipos y control de actividades.",
+    "repository": "https://github.com/mark-1701/uptask_frontend.git",
+    "preview": "https://uptask-frontend-mocha.vercel.app"
+  },
+  {
+    "imageURL": "/mi-kiosquito.png",
+    "title": "Mi Kiosquito - Sistema de pedidos para cafetería",
+    "description": "Desarrollo de una aplicación web para la gestión de pedidos en cafetería, que permite la toma de órdenes desde terminales digitales y la administración del proceso de preparación y entrega. ",
+    "repository": "https://github.com/mark-1701/quiosco_next_app_router.git",
+    "preview": "https://quiosco-next-app-router-ebon-psi.vercel.app/order/cafe"
+  },
+  {
+    "imageURL": "/tesloshop.png",
+    "title": "Tesloshop - Plataforma de comercio electrónico",
+    "description": "Desarrollo de una aplicación web de comercio electrónico con catálogo de productos, carrito de compras y panel administrativo, orientada a la gestión de ventas y la administración de inventario.",
+    "repository": "https://github.com/mark-1701/teslo-shop.git",
+    "preview": "https://teslo-shop-six-xi.vercel.app/gender/women"
+  },
+  {
+    "imageURL": "/inkwell.png",
+    "title": "Inkwell - Sistema de gestión de contenido para blogs (cms)",
+    "description": "Desarrollo de una aplicación web para la creación, edición y publicación de artículos en blogs, con editor de texto enriquecido, gestión de recursos multimedia y almacenamiento de contenido estructurado.",
+    "repository": "https://github.com/mark-1701/Inkwell.git",
+    "preview": "https://github.com/mark-1701/Inkwell.git"
+  }
+]

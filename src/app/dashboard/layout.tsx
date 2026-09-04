@@ -18,9 +18,7 @@ export default function DashboardLayout({
           <NavMenuMobile />
         </div>
 
-        <div className="w-full overflow-auto p-2 lg:p-12 lg:pb-8">
-          {children}
-        </div>
+        <div className="w-full overflow-auto p-2 lg:p-12">{children}</div>
       </div>
     </div>
   );

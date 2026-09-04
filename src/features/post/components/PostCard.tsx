@@ -46,20 +46,22 @@ export const PostCard = ({ id, title }: PostCardProps) => {
         {title ?? 'Sin título'}
       </Link>
 
-      <div className="invisible flex gap-3 group-hover:visible">
+      <div className="invisible flex gap-2 group-hover:visible">
         <button
-          className="hover:cursor-pointer"
+          className="flex h-6 w-6 items-center justify-center rounded
+            bg-yellow-500 hover:cursor-pointer"
           onClick={() => handleRedirection(id)}
         >
-          <GoPencil size={18} className="text-yellow-600" />
+          <GoPencil size={16} className="text-white" />
         </button>
 
         <button
-          className="hover:cursor-pointer disabled:opacity-50"
+          className="flex h-6 w-6 items-center justify-center rounded bg-red-500
+            p-1 hover:cursor-pointer disabled:opacity-50"
           disabled={isDeleting}
           onClick={() => handleDelete(id)}
         >
-          <GoTrash size={18} className="text-red-500" />
+          <GoTrash size={16} className="text-white" />
         </button>
       </div>
     </li>

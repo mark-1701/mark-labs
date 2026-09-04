@@ -6,7 +6,7 @@ export const AboutMe = () => {
     <Stack>
       <div className="flex flex-col gap-8">
         <div className="flex items-center gap-3 sm:gap-6">
-          <Image src={'/profile.jpg'} alt={''} width={70} height={70} />
+          <Image src={'/profile.jpg'} alt='Foto de perfil' width={70} height={70} />
           <div>
             <h1
               className="font-serif text-lg font-bold text-(--home-foreground)

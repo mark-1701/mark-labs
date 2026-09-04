@@ -1,6 +1,13 @@
 'use client';
 
-import { PostSummary, PostTitle, TextEditor } from '../components';
+import Link from 'next/link';
+import { GoArrowLeft } from 'react-icons/go';
+import {
+  BackToListButton,
+  PostSummary,
+  PostTitle,
+  TextEditor
+} from '../components';
 import { PostEditorContext } from '../context/PostEditorContext';
 import { useCreatePostEditor } from '../hooks/useCreatePostEditor';
 
@@ -15,10 +22,10 @@ const EditPostContent = ({ postId }: EditPostContentProps) => {
 
   return (
     <PostEditorContext.Provider value={{ insertImage, isUploadingImage }}>
-      <div className="h-full">
-        {/* <h1 className="text-xl font-semibold text-gray-700">Editar post</h1> */}
+      <div className="flex h-full flex-col">
+        <BackToListButton />
 
-        <div className="flex h-full gap-4">
+        <div className="flex h-full min-h-0 gap-4">
           <div className="relative flex flex-1 flex-col">
             {/* image loader */}
             {isUploadingImage && (

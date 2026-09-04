@@ -18,7 +18,7 @@ export const PostTitle = ({ postId }: PostTitleProps) => {
       type="text"
       placeholder="Escribe el título de tu artículo"
       value={draftPost?.draft.title ?? ''}
-      className="mb-6 rounded-md border border-gray-300 p-2 text-3xl font-bold
+      className="mb-4 rounded-md border border-gray-300 p-2 text-3xl font-bold
         placeholder:font-medium placeholder:text-gray-400"
       onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
         updateDraftPost(postId, { title: e.target.value });
