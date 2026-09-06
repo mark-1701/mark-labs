@@ -16,7 +16,7 @@ const BlogPage = async () => {
 
       <ul className="divide-y-1 divide-(--border)">
         {resp.data.map(post => (
-          <li key={post.id} className="p-2">
+          <li key={post.id} className="py-2">
             <div className="flex justify-between gap-4">
               <Link
                 href={`/blog/${post.id}`}
